@@ -1,1 +1,1 @@
-# rsschool-cv
+https://DingDogen.github.io/rsschool-cv/cv
