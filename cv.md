@@ -50,7 +50,8 @@
 ```
 
 ### Work experience 
-*Nothing yet*
+ - [Conway's Game of Life](https://github.com/DingDogen/Conway-s-Game-Of-Life)
+ - [Tic-Tac Toe](https://github.com/DingDogen/Tic-Tac-Toe)
 
 ### Education
  - Belarusian National Technical University, Software Engineer (current time);
