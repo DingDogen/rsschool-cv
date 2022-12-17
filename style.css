@@ -12,22 +12,31 @@ body
 {
     width: 300px;
     height: 350px;
-    margin: 50px;
-    margin-left: 0px;
+    margin: 30px;
+    margin-left: 50px;
     margin-top: 0px;
     border: solid gray 5px;
+    display: inline;
+    float: left;
 }
 
 .nav
 {
     background-color: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .nav-list
 {
     list-style-type: none;
-    display: inline-block;
-    font-size: 25px;;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .nav-item
@@ -40,5 +49,80 @@ body
 {
     text-decoration: none;
     color: black;
-    padding: 10px 80px;
+    padding: 0px 5px;
+}
+
+h1
+{
+    font-size: 50px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+h2
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 80px;
+    font-size: 25px;
+}
+
+.contacts-section
+{
+    padding: 0;
+    margin-right: 50px;
+    margin-top: -5px;
+    margin-left: 375px;
+    font-size: 25px;
+    border: solid #000000 1px;
+}
+
+.contacts-section ul
+{
+    margin: 0;
+    font-size: 30px;
+    list-style: none;
+    list-style-position: inside;
+    column-count: 2;
+}
+
+.contacts-item
+{
+    margin: 5px;
+    padding: 0;
+}
+
+.workspace
+{
+    margin: 50px;
+    margin-top: 25px;
+    border: solid #000000 3px;
+}
+
+.workspace p
+{
+    margin: 7px;
+    text-align: left;
+    columns: 2;
+}
+
+.summary-section 
+{
+    border: solid #000000 1px;
+    width: 45%;
+    display:inline-block;
+}
+
+.education-section
+{
+    border: solid #000000 1px;
+    justify-content: right;
+    display: block;
+    width: 45%;
 }
