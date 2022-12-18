@@ -26,17 +26,16 @@
         <h1>Roman Barkovets</h1>
         <p>Front-End Developer</p>
     </header>
-    <body>  
         <main>
         <section id="contacts" class="contacts-section">
                 <h2>Contacts:</h2>
                 <ul class="contacts-list">
-                    <li class="contacts-item"><img src="./images/icons/location-icon.png" alt="" width="30px" height="30px"><b> Location:</b> Minsk, Belarus</li>
-                    <li class="contacts-item"><img src="./images/icons/github-icon.png" alt="" width="30px" height="30px"><b> GitHub:</b> <a href="https://github.com/DingDogen">DingDogen</a></li>
-                    <li class="contacts-item"><img src="./images/icons/linkedin-icon.png" alt="" width="30px" height="30px"><b> LinkedIn:</b> <a href="https://www.linkedin.com/in/romanbarkovets/">Roman Barkovets</a></li>
-                    <li class="contacts-item"><img src="./images/icons/telegram-icon.png" alt="" width="30px" height="30px"><b> Telegram:</b> @dingdogen</li>
-                    <li class="contacts-item"><img src="./images/icons/discord-icon.png" alt="" width="30px" height="30px"><b> Discord:</b> Uranum#7150</li>
-                    <li class="contacts-item"><img src="./images/icons/yandexmai-iconl.png" alt="" width="30px" height="30px"><b> E-mail:</b> romanbarkovets@yandex.ru</li>
+                    <li class="contacts-item"><img src="./images/icons/location-icon.png" alt="" width="30" height="30"><b> Location:</b> Minsk, Belarus</li>
+                    <li class="contacts-item"><img src="./images/icons/github-icon.png" alt="" width="30" height="30"><b> GitHub:</b> <a href="https://github.com/DingDogen">DingDogen</a></li>
+                    <li class="contacts-item"><img src="./images/icons/linkedin-icon.png" alt="" width="30" height="30"><b> LinkedIn:</b> <a href="https://www.linkedin.com/in/romanbarkovets/">Roman Barkovets</a></li>
+                    <li class="contacts-item"><img src="./images/icons/telegram-icon.png" alt="" width="30" height="30"><b> Telegram:</b> @dingdogen</li>
+                    <li class="contacts-item"><img src="./images/icons/discord-icon.png" alt="" width="30" height="30"><b> Discord:</b> Uranum#7150</li>
+                    <li class="contacts-item"><img src="./images/icons/yandexmai-iconl.png" alt="" width="30" height="30"><b> E-mail:</b> romanbarkovets@yandex.ru</li>
                 </ul>
         </section>
 
@@ -47,7 +46,6 @@
                 <p>In university I got basic knowledges about C++, Python, Assembler, C#, Computer Sciense and Software development technology.</p>
                 <p>My current goal is learn JavaScript + HTML + CSS because I want to become Front-End Developer.</p>
                 <p>As a person I am quite calm and diligent but I don't like super-big difficulties.</p>
-                </p>
             </section>   
             
             <section id="education" class="education-section">
@@ -58,30 +56,26 @@
 
             <section id="code-example" class="code-section">
                 <h2>Example of my code:</h2>
-                <code>
-                    <pre>
+                <pre>
+                    <code>
 private int CountNeighbours(int x, int y)
 {
     int count = 0;
-    for (int i = -1; i < 2; i++)
+    for (int i = -1; i &lt; 2; i++)
     {
-        for (int j = -1; j < 2; j++)
+        for (int j = -1; j &lt; 2; j++)
         {
             int col = (x + i + columns) % columns;
             int row = (y + j + rows) % rows;            
             bool IsSelfChecking = col == x && row == y;
             bool hasLife = field[col, row];
-
-            if (hasLife && !IsSelfChecking)  
-            {
-                count++;
-            }
+            if (hasLife && !IsSelfChecking)  count++;
         }
     }            
     return count;
 }                
-                    </pre>
-                </code>
+                    </code>
+                </pre>
             </section>
 
             <section id="skills" class="skills-section">
@@ -109,11 +103,10 @@ private int CountNeighbours(int x, int y)
             </section>
         </div>
         </main>
-    </body>
-    <footer>
+<footer>
         <p><a href="https://github.com/DingDogen"><img src="./images/icons/github-icon.png" alt="gh logo" width="23" height="23">My GitHub</a></p>
         <p>2022</p>
         <p><a href="https://rs.school/js/"><img  src="./images/icons/rs_school_js.svg" alt="rsschool logo" width="150" height="50"></a></p>
-    </footer>
+</footer>
 </body>
 </html>
