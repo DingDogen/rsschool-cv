@@ -140,7 +140,7 @@ p
 
 .experience-section
 {
-    margin-top: 36px;
+    margin-top: 26px;
     margin-bottom: 0px;
 }
 
@@ -149,7 +149,6 @@ footer
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: #000000;
 }
 
 footer p
