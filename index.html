@@ -11,8 +11,9 @@
     <header>
         <nav class="nav">   
             <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#summary">About me</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#code-example">Code Example</a></li>
                 <li class="nav-item"><a class="nav-link" href="#work-experience">Work experience</a></li>
                 <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
@@ -24,7 +25,8 @@
         <p>Front-End Developer</p>
     </header>
     <body>  
-        <section class="contacts-section">
+        <main>
+        <section id="contacts" class="contacts-section">
                 <h2>Contacts:</h2>
                 <ul class="contacts-list">
                     <li class="contacts-item"><img src="./images/icons/location-icon.png" alt="" width="30px" height="30px"><b> Location:</b> Minsk, Belarus</li>
@@ -37,7 +39,7 @@
         </section>
 
         <div class="workspace">
-            <section class="summary-section">
+            <section id="summary" class="summary-section">
                 <h2>About me</h2>
                 <p>I am student of Belarusian National Technical University.</p>
                 <p>In university I got basic knowledges about C++, Python, Assembler, C#, Computer Sciense and Software development technology.</p>
@@ -46,15 +48,68 @@
                 </p>
             </section>   
             
-            <section class="education-section">
+            <section id="education" class="education-section">
                 <h2>Education</h2>
                 <p>Belarusian National Technical University, Software Engineer (current time)</p>
                 <p>Microsoft Learn Power BI course (beginner level)</p>               
             </section>
+
+            <section id="code-example" class="code-section">
+                <h2>Example of my code:</h2>
+                <code>
+                    <pre>
+private int CountNeighbours(int x, int y)
+{
+    int count = 0;
+    for (int i = -1; i < 2; i++)
+    {
+        for (int j = -1; j < 2; j++)
+        {
+            int col = (x + i + columns) % columns;
+            int row = (y + j + rows) % rows;            
+            bool IsSelfChecking = col == x && row == y;
+            bool hasLife = field[col, row];
+
+            if (hasLife && !IsSelfChecking)           
+                count++;
+        }
+    }            
+    return count;
+}                
+                    </pre>
+                </code>
+            </section>
+
+            <section id="skills" class="skills-section">
+                <h2>My skills:</h2>
+                <ul>
+                    <li>Python and C++ Basics</li>
+                    <li>C# + WinForms PreIntermediate</li>
+                    <li>Photoshop</li>
+                    <li>Git Basics</li>
+                    <li>Visual Studio + VS Code</li>
+                </ul>
+            </section>
+
+            <section id="languages" class="languages-section">
+                <h2>Languages:</h2>
+                <p>Russian - native</p>
+                <p>Belarusian - Belarusian language school</p>
+                <p>English - A2</p>
+            </section>
+
+            <section id="work-experience" class="experience-section">
+                <h2>My little projects:</h2>
+                <p><a href="https://github.com/DingDogen/Conway-s-Game-Of-Life">Conway's Game of Life</a></p>
+                <p><a href="https://github.com/DingDogen/Tic-Tac-Toe">Console Tic-Tac Toe</a></p>
+            </section>
         </div>
+        </main>
     </body>
     <footer>
-
+        <p><a href="https://github.com/DingDogen">My GitHub</a></p>
+        <p>2022</p>
+        <p><a href="https://rs.school/js/"><img  src="./images/icons/rs_school_js.svg" alt="rsschool logo" width="150" height="50"></a></p>
     </footer>
 </body>
 </html>

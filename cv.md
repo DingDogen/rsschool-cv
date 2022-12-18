@@ -60,4 +60,4 @@
 ### Languages
  - Russian - native
  - Belarusian - Belarusian language school
- - English - A2  
+ - English - A2

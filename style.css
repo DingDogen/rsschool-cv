@@ -1,6 +1,9 @@
 html
 {
+    margin: auto;
     scroll-behavior: smooth; 
+    width:fit-content;
+    height: fit-content;
 }
 
 body
@@ -12,19 +15,17 @@ body
 {
     width: 300px;
     height: 350px;
-    margin: 30px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     margin-top: 0px;
     border: solid gray 5px;
-    display: inline;
     float: left;
+    justify-self: start;
 }
 
 .nav
 {
     background-color: yellow;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .nav-list
@@ -34,7 +35,7 @@ body
     justify-content: space-between;
     padding: 15px;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -78,9 +79,8 @@ p
     padding: 0;
     margin-right: 50px;
     margin-top: -5px;
-    margin-left: 375px;
+    margin-left: 325px;
     font-size: 25px;
-    border: solid #000000 1px;
 }
 
 .contacts-section ul
@@ -100,7 +100,6 @@ p
 
 .workspace
 {
-    margin: 50px;
     margin-top: 0px;
     display: inline-block;
 }
@@ -111,7 +110,14 @@ p
     text-align: left;
 }
 
-.summary-section 
+.workspace ul, .code-section pre, .languages-section p, .experience-section p
+{
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.summary-section, .skills-section, .languages-section,  .experience-section 
 {
     border: solid #000000 1px;
     width: 49%;
@@ -119,10 +125,35 @@ p
     text-align: left;
 }
 
-.education-section
+.education-section, .code-section
 {
     border: solid #000000 1px;
     width: 49%;
     float: right;
     text-align: left;
+}
+
+.code-section, .skills-section, .languages-section, .experience-section
+{
+    margin-top: 30px;
+}
+
+.experience-section
+{
+    margin-top: 36px;
+    margin-bottom: 0px;
+}
+
+footer
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+footer p
+{
+    margin: 0;
+    padding: 0;
 }
