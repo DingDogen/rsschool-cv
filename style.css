@@ -9,6 +9,7 @@ html
 body
 {
     background-color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
 }
 
 .avatar
@@ -135,12 +136,12 @@ p
 
 .code-section, .skills-section, .languages-section, .experience-section
 {
-    margin-top: 30px;
+    margin-top: 44px;
 }
 
 .experience-section
 {
-    margin-top: 26px;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
 
@@ -149,6 +150,7 @@ footer
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    background-color: yellow;
 }
 
 footer p
