@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">  
+    <title>CV Roman Barkovets</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">   
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#summary">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#code-example">Code Example</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work-experience">Work experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+        <img class="avatar" src="./images/my_avatar.jpg" alt="my photo">
+        <h1>Roman Barkovets</h1>
+        <p>Front-End Developer</p>
+    </header>
+        <main>
+        <section id="contacts" class="contacts-section">
+                <h2>Contacts:</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item"><img src="./images/icons/location-icon.png" alt="" width="30" height="30"><b> Location:</b> Minsk, Belarus</li>
+                    <li class="contacts-item"><img src="./images/icons/github-icon.png" alt="" width="30" height="30"><b> GitHub:</b> <a href="https://github.com/DingDogen">DingDogen</a></li>
+                    <li class="contacts-item"><img src="./images/icons/linkedin-icon.png" alt="" width="30" height="30"><b> LinkedIn:</b> <a href="https://www.linkedin.com/in/romanbarkovets/">Roman Barkovets</a></li>
+                    <li class="contacts-item"><img src="./images/icons/telegram-icon.png" alt="" width="30" height="30"><b> Telegram:</b> @dingdogen</li>
+                    <li class="contacts-item"><img src="./images/icons/discord-icon.png" alt="" width="30" height="30"><b> Discord:</b> Uranum#7150</li>
+                    <li class="contacts-item"><img src="./images/icons/yandexmai-iconl.png" alt="" width="30" height="30"><b> E-mail:</b> romanbarkovets@yandex.ru</li>
+                </ul>
+        </section>
+
+        <div class="workspace">
+            <section id="summary" class="summary-section">
+                <h2>About me</h2>
+                <p>I am student of Belarusian National Technical University.</p>
+                <p>In university I got basic knowledges about C++, Python, Assembler, C#, Computer Sciense and Software development technology.</p>
+                <p>My current goal is learn JavaScript + HTML + CSS because I want to become Front-End Developer.</p>
+                <p>As a person I am quite calm and diligent but I don't like super-big difficulties.</p>
+            </section>   
+            
+            <section id="education" class="education-section">
+                <h2>Education</h2>
+                <p>Belarusian National Technical University, Software Engineer (current time)</p>
+                <p>Microsoft Learn Power BI course (beginner level)</p>               
+            </section>
+
+            <section id="code-example" class="code-section">
+                <h2>Example of my code:</h2>
+                <pre>
+                    <code>
+private int CountNeighbours(int x, int y)
+{
+    int count = 0;
+    for (int i = -1; i &lt; 2; i++)
+    {
+        for (int j = -1; j &lt; 2; j++)
+        {
+            int col = (x + i + columns) % columns;
+            int row = (y + j + rows) % rows;            
+            bool IsSelfChecking = col == x && row == y;
+            bool hasLife = field[col, row];
+            if (hasLife && !IsSelfChecking)  count++;
+        }
+    }            
+    return count;
+}                
+                    </code>
+                </pre>
+            </section>
+
+            <section id="skills" class="skills-section">
+                <h2>My skills:</h2>
+                <ul>
+                    <li>Python and C++ Basics</li>
+                    <li>C# + WinForms PreIntermediate</li>
+                    <li>Photoshop</li>
+                    <li>Git Basics</li>
+                    <li>Visual Studio + VS Code</li>
+                </ul>
+            </section>
+
+            <section id="languages" class="languages-section">
+                <h2>Languages:</h2>
+                <p>Russian - native</p>
+                <p>Belarusian - Belarusian language school</p>
+                <p>English - A2</p>
+            </section>
+
+            <section id="work-experience" class="experience-section">
+                <h2>My little projects:</h2>
+                <p><a href="https://github.com/DingDogen/Conway-s-Game-Of-Life">Conway's Game of Life</a></p>
+                <p><a href="https://github.com/DingDogen/Tic-Tac-Toe">Console Tic-Tac Toe</a></p>
+            </section>
+        </div>
+        </main>
+<footer>
+        <p><a href="https://github.com/DingDogen"><img src="./images/icons/github-icon.png" alt="gh logo" width="23" height="23">My GitHub</a></p>
+        <p>2022</p>
+        <p><a href="https://rs.school/js/"><img  src="./images/icons/rs_school_js.svg" alt="rsschool logo" width="150" height="50"></a></p>
+</footer>
+</body>
+</html>
