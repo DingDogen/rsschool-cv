@@ -101,28 +101,28 @@ p
 .workspace
 {
     margin: 50px;
-    margin-top: 25px;
-    border: solid #000000 3px;
+    margin-top: 0px;
+    display: inline-block;
 }
 
 .workspace p
 {
     margin: 7px;
     text-align: left;
-    columns: 2;
 }
 
 .summary-section 
 {
     border: solid #000000 1px;
-    width: 45%;
-    display:inline-block;
+    width: 49%;
+    float: left;
+    text-align: left;
 }
 
 .education-section
 {
     border: solid #000000 1px;
-    justify-content: right;
-    display: block;
-    width: 45%;
+    width: 49%;
+    float: right;
+    text-align: left;
 }
